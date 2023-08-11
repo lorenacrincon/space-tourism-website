@@ -2,7 +2,7 @@ import React from "react";
 
 function Home() {
   return (
-    <main className="home-main">
+    <main className="main-container home-main">
       <section className="mx-6 flex-col h-full justify-end md:mx-40 pb-12 md:pb-0 flex md:justify-center md:gap-12 lg:flex-row lg:justify-between lg:items-end lg:pb-32">
         <div className="flex flex-col justify-center align-middle gap-4 lg:gap-6 lg:w-2/5">
           <h2 className=" lg:text-start main-subheading text-[20px] lg:text-[28px]">

@@ -1,9 +1,11 @@
 .home-main {
   background-image: url(../home/background-home-mobile.jpg);
-  background-position: cover;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
 }
+
 .main-subheading {
   color: var(--lightBlueGray);
   text-align: center;
