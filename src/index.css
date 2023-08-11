@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    src: url("/public/fonts/Bellefair-Regular.ttf") format(".ttf");
+  }
+  @font-face {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    src: url("/public/fonts/BarlowCondensed-Regular.ttf") format(".ttf");
+  }
+}
+
+:root {
+  --darkBlue: hsl(230, 35%, 7%);
+  --lightBlueGray: hsl(231, 77%, 90%);
+  --white: hsl(0, 0%, 100%);
+}

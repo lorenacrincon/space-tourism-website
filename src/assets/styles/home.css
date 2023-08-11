@@ -1,0 +1,77 @@
+.home-main {
+  background-image: url(../home/background-home-mobile.jpg);
+  background-position: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.main-subheading {
+  color: var(--lightBlueGray);
+  text-align: center;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 20px;
+  letter-spacing: 3.375px;
+  text-transform: uppercase;
+}
+
+.main-btn {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  margin-top: 5rem;
+  border-radius: 50%;
+  display: block;
+  font-size: 20px;
+  letter-spacing: 1.25px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  &::before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: transform 0.43s;
+  }
+
+  &::after {
+    content: "EXPLORE";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    color: var(--darkBlue);
+  }
+
+  &:hover {
+    &::before {
+      transform: scale(1.5);
+    }
+  }
+}
+
+@media only screen and (min-width: 376px) {
+  .home-main {
+    background-image: url(../home/background-home-tablet.jpg);
+  }
+  .main-btn {
+    width: 242px;
+    height: 242px;
+    font-size: 32px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .home-main {
+    background-image: url(../home/background-home-desktop.jpg);
+  }
+  .main-btn {
+    width: 274px;
+    height: 274px;
+  }
+}
