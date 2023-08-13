@@ -1,0 +1,30 @@
+.navbar-bg {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(41px);
+  height: 100vh;
+  width: 253px;
+  position: absolute;
+  top: -70px;
+}
+
+nav a {
+  position: relative;
+}
+
+nav a::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 4;
+  width: 0;
+  height: 3px;
+  background-color: var(--white);
+  opacity: 0.5;
+  transition: width 0.2s ease-out;
+}
+
+nav a:hover::before,
+nav a:active::before {
+  width: 130px;
+  background-color: var(--white);
+}
