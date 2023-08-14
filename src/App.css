@@ -25,13 +25,6 @@ p {
   text-transform: uppercase;
 }
 
-.nav-text {
-  color: var(--white);
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 16px;
-  letter-spacing: 2.7px;
-}
-
 .section-heading {
   color: var(--white);
   font-family: "Barlow Condensed", sans-serif;

@@ -4,7 +4,26 @@
   height: 100vh;
   width: 253px;
   position: absolute;
-  top: -70px;
+  top: -65px;
+}
+
+.nav-text {
+  color: var(--white);
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2.7px;
+}
+
+.nav-deco {
+  height: 1px;
+  width: 32%;
+  background-color: white;
+  margin-left: 100px;
+  opacity: 0.25;
+}
+
+nav a {
+  position: relative;
 }
 
 nav a {
@@ -27,4 +46,45 @@ nav a:hover::before,
 nav a:active::before {
   width: 130px;
   background-color: var(--white);
+}
+
+@media only screen and (min-width: 640px) {
+  .nav-text {
+    font-size: 14px;
+    letter-spacing: 2.362px;
+  }
+  .navbar-bg {
+    height: 100%;
+    width: 450px;
+    top: 0px;
+    right: 0px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 12px -2px;
+  }
+  nav a::before {
+    bottom: -37px;
+  }
+  nav a:hover::before,
+  nav a:active::before {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .nav-text {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+  .navbar-bg {
+    height: 100%;
+    width: 830px;
+    top: 0px;
+    right: 0px;
+  }
+  nav a::before {
+    bottom: -37px;
+  }
+  nav a:hover::before,
+  nav a:active::before {
+    width: 100%;
+  }
 }
