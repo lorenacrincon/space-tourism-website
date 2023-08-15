@@ -1,13 +1,17 @@
-h1 {
+.main-title {
   font-family: "Bellefair", serif;
   color: var(--white);
   text-transform: uppercase;
 }
 
 p {
-  font-family: "Barlow Condensed", sans-serif;
-  color: var(--lightBlueGray);
-  line-height: 32px;
+  color: #d0d6f9;
+  text-align: center;
+  font-family: Barlow;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 166.667% */
 }
 
 .subheading-1 {
@@ -25,19 +29,16 @@ p {
   text-transform: uppercase;
 }
 
-.section-heading {
-  color: var(--white);
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 28px;
-  letter-spacing: 4.725px;
-  text-transform: uppercase;
+@media only screen and (min-width: 640px) {
+  p {
+    line-height: 28px;
+    font-size: 16px;
+  }
 }
 
-.section-number {
-  color: var(--white);
-  font-family: Barlow Condensed;
-  font-size: 28px;
-  font-weight: 700;
-  letter-spacing: 4.725px;
-  opacity: 0.25;
+@media only screen and (min-width: 1024px) {
+  p {
+    line-height: 32px;
+    font-size: 18px;
+  }
 }

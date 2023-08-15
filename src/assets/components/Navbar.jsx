@@ -10,19 +10,19 @@ function Navbar() {
   return (
     <div className="lg:mt-10 absolute w-full z-30">
       <nav className="">
-        <div className="max-w-7xl mx-auto px-4 py-4 sm:px-12 sm:py-6 lg:px-8  z-50">
+        <div className="max-w-full mx-auto px-5 py-4 sm:px-12 sm:py-6 lg:px-12 z-50">
           <div className="flex items-center justify-between">
             <div className="">
               <img className="h-12 w-12" src={logo} alt="Logo" />
             </div>
-            <div className="hidden lg:flex basis-1/2 nav-deco absolute z-50"></div>
+            <div className="hidden xl:flex nav-deco absolute z-50"></div>
             <div className="hidden md:flex md:justify-center md:items-center text-white nav-text gap-10 navbar-bg ">
               <NavLink to="/">
                 <span className="hidden lg:inline me-4 font-bold">00</span>
                 HOME
               </NavLink>
 
-              <NavLink to="/moon">
+              <NavLink to="/destination">
                 <span className="hidden lg:inline me-4 font-bold">01</span>
                 DESTINATION
               </NavLink>

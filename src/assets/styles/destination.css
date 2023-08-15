@@ -1,23 +1,104 @@
-.destination-main {
-  background-color: black;
+.destination-bg {
+  background-image: url(../destination/background-destination-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100vh;
+  background-position: center;
+  width: 100%;
+  mix-blend-mode: screen;
 }
 
-.destination-main::after {
+.section-title {
+  font-family: Bellefair;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.section-number {
+  color: var(--white);
+  font-family: Barlow Condensed;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2.7px;
+  opacity: 0.25;
+}
+
+.section-heading {
+  color: var(--white);
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+}
+
+.submenu-text {
+  color: var(--lightBlueGray);
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2.362px;
+}
+
+.submenu-btn {
+  position: relative;
+}
+
+.submenu-btn {
+  position: relative;
+}
+
+.submenu-btn::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: -7px;
+  left: 4;
+  width: 0;
+  height: 3px;
+  background-color: var(--white);
+  opacity: 0.5;
+  transition: width 0.2s ease-out;
+}
+
+.submenu-btn:hover::before,
+.submenu-btn:active::before {
   width: 100%;
-  height: 100vh;
-  background-image: url(../destination/background-destination-mobile.jpg),
-    linear-gradient(var(--lightBlueGray), var(--lightBlueGray) 100%);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  opacity: 0.6;
-  mix-blend-mode: screen;
+  background-color: var(--white);
+}
+
+.submenu-btn:active {
+  color: white;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 640px) {
+  .destination-bg {
+    background-image: url(../destination/background-destination-tablet.jpg);
+    height: 100vh;
+  }
+  .section-heading,
+  .section-number {
+    font-size: 20px;
+    letter-spacing: 3.375px;
+  }
+  .section-title {
+    font-size: 80px;
+  }
+  .submenu-text {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .destination-bg {
+    background-image: url(../destination/background-destination-desktop.jpg);
+  }
+  .section-heading,
+  .section-number {
+    font-size: 28px;
+    letter-spacing: 4.725px;
+  }
+  .section-title {
+    font-size: 100px;
+  }
 }

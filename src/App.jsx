@@ -6,7 +6,7 @@ import "./assets/styles/destination.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./assets/components/Home";
 import Navbar from "./assets/components/Navbar";
-import DestinationA from "./assets/components/DestinationA";
+import Destination from "./assets/components/Destination";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/moon" element={<DestinationA />} />
+        <Route path="/destination" element={<Destination />} />
       </Routes>
     </>
   );
