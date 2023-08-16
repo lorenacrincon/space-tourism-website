@@ -16,7 +16,7 @@
 
 .nav-deco {
   height: 1px;
-  width: 42%;
+  width: 35%;
   background-color: white;
   margin-left: 100px;
   opacity: 0.25;
@@ -34,7 +34,7 @@ nav a::before {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 0;
+  width: o;
   height: 3px;
   background-color: rgba(255, 255, 255, 0.5);
   transition: width 0.3s ease;

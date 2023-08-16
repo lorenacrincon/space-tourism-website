@@ -1,9 +1,10 @@
-.home-main {
+.home-bg {
   background-image: url(../home/background-home-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-position: center;
   height: 100vh;
+  mix-blend-mode: screen;
 }
 
 .main-subheading {
@@ -57,9 +58,10 @@
   }
 }
 
-@media only screen and (min-width: 376px) {
-  .home-main {
+@media only screen and (min-width: 640px) {
+  .home-bg {
     background-image: url(../home/background-home-tablet.jpg);
+    height: 100vh;
   }
   .main-btn {
     width: 242px;
@@ -69,7 +71,7 @@
 }
 
 @media only screen and (min-width: 769px) {
-  .home-main {
+  .home-bg {
     background-image: url(../home/background-home-desktop.jpg);
   }
   .main-btn {

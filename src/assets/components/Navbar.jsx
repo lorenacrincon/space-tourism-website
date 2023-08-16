@@ -101,24 +101,24 @@ function Navbar() {
                 ref={ref}
                 className="px-2 pt-2 pb-3 space-y-1 sm:px-3 navbar-bg z-40"
               >
-                <a href="#" className="block px-6 pb-3 pt-24 rounded-md ">
+                <NavLink to="/" className=" mx-6 pb-3 pt-24 rounded-md ">
                   <span className="pe-4 font-bold">00</span>HOME
-                </a>
+                </NavLink>
 
-                <a href="#" className="block px-6 py-3 rounded-md">
+                <NavLink to="/destination" className=" mx-6 py-3 rounded-md">
                   <span className="pe-4 font-bold">01</span>
                   DESTINATION
-                </a>
+                </NavLink>
 
-                <a href="#" className="block px-6 py-3 rounded-md ">
+                <NavLink to="/crew" className="mx-6 py-3 rounded-md ">
                   <span className="pe-4 font-bold">02</span>
                   CREW
-                </a>
+                </NavLink>
 
-                <a href="#" className="block px-6 py-3 rounded-md ">
+                <NavLink to="/crew" className=" mx-6 py-3 rounded-md ">
                   <span className="pe-4 font-bold">03</span>
                   TECHNOLOGY
-                </a>
+                </NavLink>
               </div>
             </div>
           )}

@@ -8,12 +8,12 @@ function Destination() {
   const { name, images, description, distance, travel } = planets[value];
 
   return (
-    <main className="destination-bg px-5 md:px-10 pb-10 lg:pb-0 pt-24 md:pt-40 lg:px-40 lg:pt-60">
+    <main className="destination-bg px-5 md:px-12 pb-10 lg:pb-0 xl:pb-20 pt-24 md:pt-40 lg:px-40 lg:pt-60">
       <h1 className="section-heading text-center md:text-start mb-10 md:mb-14">
         <span className="me-5 section-number">01</span>
         PICK YOUR DESTINATION
       </h1>
-      <section className="text-white flex flex-wrap lg:flex lg:flex-nowrap md:grid justify-center md:justify-items-center lg:justify-center gap-8 lg:gap-40">
+      <section className="text-white flex flex-wrap lg:flex lg:flex-nowrap md:grid justify-center md:justify-items-center lg:justify-center gap-8 lg:gap-40 ">
         <picture>
           <source srcSet={images.webp} type="image/webp" />
           <img
