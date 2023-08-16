@@ -7,8 +7,9 @@ import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="lg:mt-10 absolute w-full z-30">
+    <div className="lg:mt-10 absolute w-full z-30 my-navbar">
       <nav className="">
         <div className="max-w-full mx-auto px-5 py-4 sm:px-12 sm:py-6 lg:px-12 z-50">
           <div className="flex items-center justify-between">
@@ -17,20 +18,20 @@ function Navbar() {
             </div>
             <div className="hidden xl:flex nav-deco absolute z-50"></div>
             <div className="hidden md:flex md:justify-center md:items-center text-white nav-text gap-10 navbar-bg ">
-              <NavLink to="/">
+              <NavLink to="/" activeClassName="active">
                 <span className="hidden lg:inline me-4 font-bold">00</span>
                 HOME
               </NavLink>
 
-              <NavLink to="/destination">
+              <NavLink to="/destination" activeClassName="active">
                 <span className="hidden lg:inline me-4 font-bold">01</span>
                 DESTINATION
               </NavLink>
 
-              <a href="#">
-                <span className="hidden lg:inline me-4 font-bold">02</span>
+              <NavLink to="/crew" activeClassName="active">
+                <span className="hidden lg:inline me-4 font-bold">03</span>
                 CREW
-              </a>
+              </NavLink>
 
               <a href="#">
                 <span className="hidden lg:inline me-4 font-bold">03</span>

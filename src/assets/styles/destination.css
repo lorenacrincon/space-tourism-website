@@ -59,13 +59,17 @@
   transition: width 0.2s ease-out;
 }
 
-.submenu-btn:hover::before,
-.submenu-btn:active::before {
+.submenu-btn:hover::before {
   width: 100%;
   background-color: var(--white);
 }
+.submenu-btn.active::before,
+.submenu-btn:focus::before {
+  opacity: 1;
+  width: 100%;
+}
 
-.submenu-btn:active {
+.submenu-btn.active {
   color: white;
   opacity: 1;
 }

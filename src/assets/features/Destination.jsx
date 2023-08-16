@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import moon from "../destination/image-moon.webp";
-import moonpng from "../destination/image-moon.png";
 import { destinations } from "/data.json";
 
 function Destination() {
@@ -17,7 +15,7 @@ function Destination() {
       </h1>
       <section className="text-white flex flex-wrap lg:flex lg:flex-nowrap md:grid justify-center md:justify-items-center lg:justify-center gap-8 lg:gap-40">
         <picture>
-          <source srcset={images.webp} type="image/webp" />
+          <source srcSet={images.webp} type="image/webp" />
           <img
             className="w-4/5 md:w-5/6 lg:w-full mx-auto"
             src={images.png}
@@ -28,7 +26,9 @@ function Destination() {
           <div className="flex gap-12 justify-center lg:justify-start">
             {planets.map((item, index) => (
               <button
-                className="submenu-text submenu-btn uppercase"
+                className={`submenu-text submenu-btn uppercase ${
+                  value === index ? "active" : ""
+                }`}
                 key={index}
                 onClick={() => setValue(index)}
               >
@@ -37,10 +37,8 @@ function Destination() {
             ))}
           </div>
           <h2 className="section-title uppercase pt-6">{name}</h2>
-          <p className="md:mx-auto lg:mx-0 lg:text-start">
-            {description}
-            <hr className="my-8 opacity-30" />
-          </p>
+          <p className="md:mx-auto lg:mx-0 lg:text-start">{description}</p>
+          <hr className="my-8 opacity-30" />
           <div className="flex flex-col md:flex-row justify-center lg:justify-start gap-6 md:gap-24">
             <div>
               <h3 className="submenu-text">AVG. DISTANCE</h3>
