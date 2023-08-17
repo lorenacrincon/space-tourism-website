@@ -50,7 +50,6 @@
 @media only screen and (min-width: 640px) {
   .crew-bg {
     background-image: url(../crew/background-crew-tablet.jpg);
-    height: 100%;
   }
   .crew-subtitle {
     font-size: 24px;
@@ -62,7 +61,6 @@
 
 @media only screen and (min-width: 768px) {
   .crew-bg {
-    height: 100%;
     background-image: url(../crew/background-crew-desktop.jpg);
   }
   .crew-subtitle {

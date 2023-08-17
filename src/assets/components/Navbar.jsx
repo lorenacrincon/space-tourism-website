@@ -33,10 +33,10 @@ function Navbar() {
                 CREW
               </NavLink>
 
-              <a href="#">
+              <NavLink to="/technology" activeClassName="active">
                 <span className="hidden lg:inline me-4 font-bold">03</span>
                 TECHNOLOGY
-              </a>
+              </NavLink>
             </div>
 
             <div className="flex md:hidden z-50">
@@ -115,7 +115,7 @@ function Navbar() {
                   CREW
                 </NavLink>
 
-                <NavLink to="/crew" className=" mx-6 py-3 rounded-md ">
+                <NavLink to="/technology" className=" mx-6 py-3 rounded-md ">
                   <span className="pe-4 font-bold">03</span>
                   TECHNOLOGY
                 </NavLink>

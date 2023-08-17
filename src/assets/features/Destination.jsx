@@ -13,7 +13,7 @@ function Destination() {
         <span className="me-5 section-number">01</span>
         PICK YOUR DESTINATION
       </h1>
-      <section className="text-white flex flex-wrap lg:flex lg:flex-nowrap md:grid justify-center md:justify-items-center lg:justify-center gap-8 lg:gap-40 ">
+      <section className="md:pt-14 text-white flex flex-wrap lg:flex lg:flex-nowrap md:grid justify-center md:justify-items-center lg:justify-center gap-8 lg:gap-40 ">
         <picture>
           <source srcSet={images.webp} type="image/webp" />
           <img
