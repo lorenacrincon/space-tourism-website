@@ -8,7 +8,7 @@ function Technology() {
   const { name, images, description } = terminologies[value];
 
   return (
-    <main className="tech-bg pb-40 min-[410px]:pb-60 md:pb-0 lg:pb-0 pt-24 md:pt-40 lg:ps-12 xl:ps-40  lg:pt-60  xxl:h-screen">
+    <main className="tech-bg pb-40 min-[410px]:pb-60 md:pb-0 lg:pb-0 pt-24 md:pt-40 lg:ps-12 xl:ps-40 lg:pt-52 2xl:h-screen">
       <h1 className="section-heading mb-10 text-center md:text-start md:px-12 md:mb-14 lg:mb-0 lg:p-0">
         <span className="me-5 section-number">03</span>
         SPACE LAUNCH 101

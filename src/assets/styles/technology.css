@@ -10,11 +10,25 @@
 .tech-btn {
   width: 40px;
   height: 40px;
-  border: solid white 1px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   color: white;
   font-family: Bellefair;
   font-size: 16px;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.tech-btn:hover {
+  border: 1px solid white;
+  transform: scale(1.1);
+}
+
+.tech-btn.active,
+.tech-btn:focus {
+  opacity: 1;
+  background-color: white;
+  color: var(--darkBlue);
+  border: none;
 }
 
 .tech-subtitle {
