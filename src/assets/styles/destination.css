@@ -107,5 +107,17 @@
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1920px) {
+  .section-heading,
+  .section-number {
+    font-size: 40px;
+    letter-spacing: 5.3px;
+  }
+  .section-title {
+    font-size: 140px;
+  }
+  .submenu-text {
+    font-size: 28px;
+    letter-spacing: 2.7px;
+  }
 }

@@ -47,7 +47,7 @@
 @media only screen and (min-width: 640px) {
   .tech-bg {
     background-image: url(../technology/background-technology-tablet.jpg);
-    height: 100vh;
+    height: 100%;
   }
   .tech-btn {
     width: 60px;
@@ -63,10 +63,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
-}
-
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 769px) {
   .tech-bg {
     background-image: url(../technology/background-technology-desktop.jpg);
     height: 100vh;
@@ -74,13 +71,19 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .tech-btn {
-    width: 80px;
-    height: 80px;
-    font-size: 32px;
-  }
   .tech-title {
     font-size: 56px;
+    text-align: start;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .tech-subtitle {
+    font-size: 28px;
+    letter-spacing: 2.7px;
+  }
+  .tech-title {
+    font-size: 65px;
     text-align: start;
   }
 }

@@ -79,3 +79,11 @@
     height: 274px;
   }
 }
+
+@media only screen and (min-width: 1920px) {
+  .main-btn {
+    width: 350px;
+    height: 350px;
+    font-size: 50px;
+  }
+}

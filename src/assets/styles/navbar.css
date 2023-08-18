@@ -4,7 +4,7 @@
   height: 100vh;
   width: 253px;
   position: absolute;
-  top: -80px;
+  top: 0px;
 }
 
 .nav-text {
@@ -22,14 +22,14 @@
   opacity: 0.25;
 }
 
-nav a {
+.my-navbar a {
   position: relative;
   display: inline-block;
   color: white;
   text-decoration: none;
 }
 
-nav a::before {
+.my-navbar a::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -40,16 +40,16 @@ nav a::before {
   transition: width 0.3s ease;
 }
 
-nav a:hover::before,
-nav a.active::before {
+.my-navbar a:hover::before,
+.my-navbar a.active::before {
   width: 100%;
 }
 
-nav a.active {
+.my-navbar a.active {
   opacity: 1;
 }
 
-nav a.active::before {
+.my-navbar a.active::before {
   background-color: white;
 }
 
@@ -65,12 +65,12 @@ nav a.active::before {
     right: 0px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 12px -2px;
   }
-  nav a::before {
+  .my-navbar a::before {
     bottom: -37px;
   }
-  nav a:hover::before,
-  nav a:active::before,
-  nav a:focus::before {
+  .my-navbar a:hover::before,
+  .my-navbar a:active::before,
+  .my-navbar a:focus::before {
     width: 100%;
     bottom: -37px;
   }
@@ -87,13 +87,37 @@ nav a.active::before {
     top: 0px;
     right: 0px;
   }
-  nav a::before {
+  .my-navbar a::before {
     bottom: -37px;
   }
-  nav a:hover::before,
-  nav a:active::before,
-  nav a:focus::before {
+  .my-navbar a:hover::before,
+  .my-navbar a:active::before,
+  .my-navbar a:focus::before {
     width: 100%;
     bottom: -37px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .nav-text {
+    font-size: 18px;
+    letter-spacing: 3.5px;
+  }
+  .navbar-bg {
+    height: 100%;
+    width: 1100px;
+    top: 0px;
+    right: 0px;
+  }
+  .my-navbar a::before {
+    bottom: -30px;
+  }
+  .my-navbar a:hover::before,
+  .my-navbar a:active::before,
+  .my-navbar a:focus::before {
+    bottom: -30px;
+  }
+  .nav-deco {
+    width: 35%;
   }
 }

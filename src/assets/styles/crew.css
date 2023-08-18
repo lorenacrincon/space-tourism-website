@@ -92,11 +92,17 @@
     height: 100vh;
   }
   .crew-img {
-    height: 650px;
+    height: 600px;
   }
   .circle-btn {
     width: 15px;
     height: 15px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .crew-img {
+    height: 650px;
+    padding-right: 75px;
   }
 }
 
