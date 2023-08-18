@@ -51,7 +51,7 @@ Users should be able to:
 
 ### What I learned
 
-This challenge helped me put into practice a new tool for me, which is Frameet Motion. It also helped me reinforce practices in grid layout.
+This challenge helped me put into practice a new tool for me, which is Framer Motion. It also helped me reinforce practices in grid layout.
 
 ```jsx
 <div className="md:order-last lg:basis-1/2 lg:absolute lg:right-10 lg:bottom-0  2xl:pe-40 3xl:pe-80">
