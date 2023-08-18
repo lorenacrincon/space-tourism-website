@@ -26,9 +26,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./space_tourism_preview.png)
-![](./space_tourism_mobile.png)
-![](./space_tourism_mobile.png)
+![](./public/space_tourism_preview.png)
+![](./public/space_tourism_mobile.png)
+![](./public/space_tourism_mobile.png)
 
 ### Links
 
