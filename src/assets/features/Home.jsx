@@ -34,11 +34,7 @@ function Home() {
           exit={{ opacity: 0, scale: 0 }}
           transition={{ duration: 1 }}
         >
-          <Link
-            to="/destination"
-            className="main-btn font-bellefair"
-            onClick="./Destination.jsx"
-          ></Link>
+          <Link to="/destination" className="main-btn font-bellefair"></Link>
         </motion.div>
       </section>
     </main>
