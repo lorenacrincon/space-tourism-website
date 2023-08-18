@@ -28,7 +28,7 @@ Users should be able to:
 
 ![](./public/space_tourism_preview.png)
 ![](./public/space_tourism_mobile.png)
-![](./public/space_tourism_mobile.png)
+![](./public/space_tourism_desktop.png)
 
 ### Links
 
