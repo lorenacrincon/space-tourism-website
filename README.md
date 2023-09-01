@@ -45,7 +45,7 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://vitejs.dev/)
+- [Vite.js](https://vitejs.dev/)
 - [TailwindCss](https://tailwindcss.com/) - For styles
 - [Framer Motion](https://www.framer.com/motion/) - For animations
 
